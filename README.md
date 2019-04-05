@@ -9,11 +9,11 @@
 ##### You can perform basic calculation Arithmatic operation like i.e. +,-,*,/,% .But here % not give you reminder it divite the reslt by 100 which is percentage.
 
 ## Whats not Their ?
-##### You see what haven't included or its range of output just change remove the display property from ccs file in class info
+##### You see what haven't included or its range of output just change remove the display property from css file in class info
 i.e.
 ```
 .info{
-display: none;// remove this part 
+display: none;// remove this line form css file 
 }
 ```
 #### Then you able to see the below code in web page.
