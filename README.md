@@ -1,6 +1,6 @@
 # Basic-calculator
 
-##idea
+## Idea
 ##### I include two section in Input Area.
 ##### 1. History section which store history
 ##### 2. output section which give final result.
@@ -15,8 +15,8 @@ i.e.
 .info{
 display: none;// remove this part 
 }
-``
-###### then you able to see the below code in web page.
+```
+###### Then you able to see the below code in web page.
 ```
 <div class="info">
       <h1><strong>NOTE:- &nbsp;This calculator does not cover all logic as the original basic calculator. </strong></h1>
