@@ -5,10 +5,10 @@
 ##### 1. History section which store history
 ##### 2. output section which give final result.
 
-### Whats Their ?
+## Whats Their ?
 ##### You can perform basic calculation Arithmatic operation like i.e. +,-,*,/,% .But here % not give you reminder it divite the reslt by 100 which is percentage.
 
-### whats not their ?
+## Whats not Their ?
 ##### You see what haven't included or its range of output just change remove the display property from ccs file in class info
 i.e.
 ```
@@ -16,7 +16,7 @@ i.e.
 display: none;// remove this part 
 }
 ```
-###### Then you able to see the below code in web page.
+#### Then you able to see the below code in web page.
 i.e.
 ```
 <div class="info">
@@ -31,7 +31,7 @@ i.e.
       </div>
  ```
  
- ### Technology used.
+ ## Technology used.
  #### 1. Javascript
  #### 2. Html
  #### 3. Css
