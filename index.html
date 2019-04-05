@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- version 5.0-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- for external fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Using Google fonts in below link -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <!-- Container for whole calculator -->
+  <section>
+
+    <!-- main conainer for bgc -->
+    <div id="container">
+      <h1>Calculator</h1>
+
+      <!-- calculator box -->
+      <div id="calculator">
+
+        <!-- Show final result
+              and
+            contain 1. History
+                    2. Output
+        -->
+        <div id="result">
+          <div class="profile" style = "color:#fff;">Output</div>
+
+          <!-- 1.history-results -->
+          <div id="history">
+            <p id="history-value"></p>
+          </div>
+          <!-- 2.output-reslut -->
+          <div id="output">
+            <p id="output-value"></p>
+          </div>
+
+          <!-- for showing it take input -->
+          <div class="input">
+            <p class="type"><span class="typer" data-delay="15" data-words="|,|" data-colors="#555,#999"></span></p>
+          </div>
+        </div>
+
+        <!-- take input form user
+              and
+            contain: all possible key for
+            input as button
+        -->
+        <div id="user-input">
+          <div class="profile">Input</div>
+
+          <!-- here we include all buttons for input -->
+          <button type="button" class="empty" id="empty">&nbsp;</button>
+          <button type="button" class="operator" id="clear">AE</button>
+          <button type="button" class="operator" id="backspace"><i class="fas fa-backspace"></i></button>
+          <button type="button" class="operator" id="/">&#247;</button>
+          <button type="button" class="number" id="7">7</button>
+          <button type="button" class="number" id="8">8</button>
+          <button type="button" class="number" id="9">9</button>
+          <button type="button" class="operator" id="*">&#215;</button>
+          <button type="button" class="number" id="4">4</button>
+          <button type="button" class="number" id="5">5</button>
+          <button type="button" class="number" id="6">6</button>
+          <button type="button" class="operator" id="-">&#8722;</button>
+          <button type="button" class="number" id="1">1</button>
+          <button type="button" class="number" id="2">2</button>
+          <button type="button" class="number" id="3">3</button>
+          <button type="button" class="operator" id="+">+</button>
+          <button type="button" class="operator percent" id="%">%</button>
+          <button type="button" class="number" id="0">0</button>
+          <button type="button" class="operator" id="." style ="font-weight:900;">.</button>
+          <button type="button" class="operator result" id="=">=</button>
+
+        </div>
+        <div class="profile">PowedBy: OneEyeHealer</div>
+      </div>
+    </div>
+    <div class="info">
+      <h1><strong>NOTE:- &nbsp;This calculator does not cover all logic as the original basic calculator. </strong></h1>
+      <div class="about">
+        <h2><i class="fas fa-bug"></i> Bugs</h2>
+        <ol>
+          <li>Input data can not be deleted form the history Event if the output is empty.</li>
+          <li>'%' work as percentage finder but it just give the output divide by 100. <br><em>i.e.</em> 4 % = 0.04</li>
+          <li>You can make decimal no using Equal to operator(=) <br><em>i.e.</em> 2. operator(=) 4 give 2.4 which is decimal no.</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <script src="vendors/js/typer.js"></script>
+  <script src="resources/js/calculator-script.js"></script>
+</body>
+</html>

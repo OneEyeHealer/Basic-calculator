@@ -1,0 +1,140 @@
+/*----- Resuable General code-----*/
+section{
+  font-family: 'open sans', sans-serif;
+  top:50%
+  left:50%;
+  transform: translate(0%, 10%);
+}
+
+/*---- The outer container ----*/
+#container{
+  width:100%;
+  height: 650px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(img/math.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 15px auto;
+}
+
+#container h1{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+/*---- The calculator container box ----*/
+#calculator{
+  width:300px;
+  height: 500px;
+  background-color: #eaedef;
+  margin: 0px auto;
+  top: 45px;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgb(0,0,0,0.19);
+}
+
+/* for RESULT continor box*/
+#result{
+  height: 120px;
+  background-color: #999;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+/*--- history ---*/
+#history-value{
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #ddd;
+}
+  /*--- output ---*/
+  #output-value{
+    text-align: right;
+    height: 50px;
+    margin: 0 35px;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  .input{
+    padding-left: 260px;
+    top:30px;
+    position: absolute;
+    font-size: 30px;
+
+  }
+  /*--- reusable styles for
+  1.button,
+  2.operator,
+  3.empty,
+  4.numbers ---*/
+  /* button{
+    background-color: #eaedef;
+  } */
+/* defining the operator, number, empty */
+.operator, .number, .empty{
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  border:none;
+}
+.result{
+  background-color: #999;
+}
+
+.result:active{
+  background-color:#919191 ;
+}
+
+.number,.empty{
+  background-color: #eaedef;
+}
+
+.operator,.number{
+  cursor: pointer;
+}
+
+.operator:active,.number:active{
+  background-color: #919191;
+}
+
+.operator:focus,.number:focus,.empty:focus{
+  outline:0;
+}
+  /* for USER-INPUT continor box*/
+#user-input{
+  height: 340px;
+}
+
+.profile{
+  text-align: center;
+  color:#919191;
+  font-size: 10px;
+}
+.info{
+background-color: #ddd;
+top: 100px;
+position: absolute;
+width: 300px;
+height:450px;
+margin: 0 0 0 20px;
+padding: 30px 20px;
+border-radius: 5%;
+display: none;
+}
+.about h2 i{
+  padding-left: 10px;
+}
